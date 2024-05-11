@@ -136,7 +136,7 @@ nav.navigation {
   background: #fff;
   background: rgba(255, 255, 255, 0.9);
   margin: 0 auto;
-  text-align: right;
+  text-align: center;
   z-index: 100;
 }
 
@@ -250,12 +250,17 @@ nav.navigation a.button {
 /* profile  */
 
 .profile {
+  /*
   margin: 60px auto 0 auto;
-  text-align: center;
+  */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-inline-start: 20%;
 }
 
 .profile .avatar {
-  display: inline-block;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -264,17 +269,22 @@ nav.navigation a.button {
 .profile h1 {
   font-weight: 400;
   letter-spacing: 0px;
-  font-size: 20px;
+  font-size: 50px;
   color: #404040;
   margin-bottom: 0;
   margin-top: 0;
+  margin-inline-start: 67px;
 }
 
 .profile h2 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
+  word-break: normal;
+  overflow-wrap: anywhere;
   color: #757575;
   margin-top: 0;
+  margin-inline-start: 67px;
+  margin-inline-end: (20% + 67px);
 }
 
 /* index post list */
