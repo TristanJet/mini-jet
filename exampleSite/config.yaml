@@ -6,7 +6,7 @@ theme: mini-jet
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
 defaultContentLanguage: en
 
-# !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
+# !!! exampleSite only, you may need to delete the line: `themesDir: ../../`
 themesDir: ../../
 
 hasCJKLanguage: true
@@ -40,7 +40,6 @@ social:
   twitter: https://x.com/flyasajet
   # facebook: your-facebook-link
 
-
 # Site parameters
 params:
   # Site Author
@@ -50,6 +49,7 @@ params:
   # Site Description, used in HTML meat
   description: My Blog
 
+  avatarLink: /images/frank.png
   ###########################################
   # Optional Configuration
   ###########################################
@@ -69,7 +69,7 @@ params:
   # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
   hiddenPostSummaryInHomePage: false
   # Website copyright, default: '© Copyright 2021 ❤️ {params.author}'
-  copyright: '' 
+  copyright: ""
 
   # Extra links in navigation
   links:
