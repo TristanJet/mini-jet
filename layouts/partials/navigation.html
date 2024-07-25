@@ -1,11 +1,11 @@
 <nav class="navigation">
 	{{ if not .IsHome }}
-		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ "Latest" }}</a>
+		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ "Home" }}</a>
 	{{ end }}
-	<a href="{{ "/posts" | relURL }}">{{ "All" }}</a>
+	<a href="{{ "/posts" | relURL }}">{{ "All Posts" }}</a>
 	<a href="{{ "/tags" | relURL }}">{{ "Tags" }}</a>
 	<a href="{{ "/tags/thoughts" | relURL }}">{{ "Thoughts" }}</a>
-	<a href="{{ "/about-jet" | relURL }}">{{ "About Jet" }}</a>
+	<a href="{{ "/latest" | relURL }}">{{ "Latest" }}</a>
 
 	{{ range $element := .Site.Params.Links }}
 		<a href="{{ $element.path }}">{{ $element.name }}</a>

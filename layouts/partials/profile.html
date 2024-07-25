@@ -1,4 +1,4 @@
-<header class="profile">
+<div class="profile">
     {{ if .Site.Params.avatarLink }}
         <a href="{{ .Site.Params.avatarLink }}">
             <img class="avatar" alt="avatar" src="{{ .Site.Params.avatarLink | relURL }}" />
@@ -12,4 +12,4 @@
             <h2>{{ . | markdownify }}</h2>
         {{ end }}
     </div>
-</header>
+</div>
